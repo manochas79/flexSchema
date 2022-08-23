@@ -9,19 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">flexSchema</th></tr>
-<tr><td><a href="#t0">Person</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">1,796</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Person</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">8,817</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flexSchema</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Person &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testCases.TC_PersonMRV</td><td><a href="#m0">setup</a></td><td rowspan="1">1661255660811</td><td rowspan="1">6682</td></tr><tr><th colspan="4">Person &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.testCases.TC_PersonMRV</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1661255669423</td><td rowspan="1">-1661255669423</td></tr><tr><th colspan="4">Person &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.testCases.TC_PersonArchive</td><td><a href="#m2">validateArchive</a></td><td rowspan="1">1661255669351</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.qa.testCases.TC_PersonMRV</td><td><a href="#m3">validatePersonHeader</a></td><td rowspan="1">1661255667727</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">com.qa.testCases.TC_PersonSRV</td><td><a href="#m4">validateSRVPerson</a></td><td rowspan="1">1661255669321</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flexSchema</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Person &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testCases.TC_PersonMRV</td><td><a href="#m0">validatePersonHeader</a></td><td rowspan="1">1661267821212</td><td rowspan="1">6669</td></tr><tr class="failedodd"><td rowspan="1">com.qa.testCases.TC_PersonSRV</td><td><a href="#m1">validateSRVPerson</a></td><td rowspan="1">1661267828898</td><td rowspan="1">1091</td></tr><tr><th colspan="4">Person &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.testCases.TC_PersonArchive</td><td><a href="#m2">validateArchive</a></td><td rowspan="1">1661267829997</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Person</h2><h3 id="m0">com.qa.testCases.TC_PersonMRV#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=104.0.5112.102)
+<h2>Person</h2><h3 id="m0">com.qa.testCases.TC_PersonMRV#validatePersonHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.testCases.TC_PersonMRV.validatePersonHeader(TC_PersonMRV.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testCases.TC_PersonSRV#validateSRVPerson</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td></td><td>Vikass</td><td></td><td>Manocha</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-kst-c56=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; style=&quot;width: 293px !important;&quot;&gt;...&lt;/button&gt; is not clickable at point (146, 103). Other element would receive the click: &lt;div _ngcontent-kst-c93=&quot;&quot; class=&quot;overlay&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=104.0.5112.82)
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-D1R0VPF&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: host: &apos;DESKTOP-70RPUI0&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c5cafdfcfa2ccb09e9a213cd32791f, get {url=http://qa.flexschema.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Users\Welcome\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59929}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59929/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c5cafdfcfa2ccb09e9a213cd32791f
+Command: [bac7b48589f1c688eeab30c33f3cea68, clickElement {id=57e7abfc-4156-4fd0-bf3d-40c84c454d47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Users\Welcome\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55558/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bac7b48589f1c688eeab30c33f3cea68)] -&gt; xpath: //button[contains(text(), &apos; Application Administration &apos;)]]
+Session ID: bac7b48589f1c688eeab30c33f3cea68
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -29,59 +33,25 @@ Session ID: b0c5cafdfcfa2ccb09e9a213cd32791f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-	at com.qa.base.BaseClass.setup(BaseClass.java:72)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.testCases.TC_PersonMRV#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.qa.pages.PersonMRV.openPersonMRV(PersonMRV.java:62)
+	at com.qa.testCases.TC_PersonSRV.validateSRVPerson(TC_PersonSRV.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.testCases.TC_PersonArchive#validateArchive</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\Welcome\git\flexSchema\src\test\java\com\qa\testData\Persons.xlsx (The system cannot find the file specified)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.io.FileNotFoundException: C:\Users\Welcome\git\flexSchema\src\test\java\com\qa\testData\Persons.xlsx (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
 	at com.qa.util.XLUtils.getRowCount(XLUtils.java:24)
 	at com.qa.base.BaseClass.getData(BaseClass.java:101)
 	at com.qa.testCases.TC_PersonArchive.getTestData(TC_PersonArchive.java:46)
 	... 25 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.testCases.TC_PersonMRV#validatePersonHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-D1R0VPF&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c5cafdfcfa2ccb09e9a213cd32791f, get {url=http://qa.flexschema.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Users\Welcome\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59929}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59929/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c5cafdfcfa2ccb09e9a213cd32791f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-	at com.qa.base.BaseClass.setup(BaseClass.java:72)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.testCases.TC_PersonSRV#validateSRVPerson</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td></td><td>Vikass</td><td></td><td>Manocha</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-D1R0VPF&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c5cafdfcfa2ccb09e9a213cd32791f, get {url=http://qa.flexschema.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Users\Welcome\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59929}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59929/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c5cafdfcfa2ccb09e9a213cd32791f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-	at com.qa.base.BaseClass.setup(BaseClass.java:72)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
