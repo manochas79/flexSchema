@@ -27,7 +27,7 @@ public class TC_PersonArchive extends BaseClass{
 		
 		if(middleName.equals(""))
 		{
-			fullName = firstName + " " + lastName;	
+			fullName = firstName  + " " + lastName;	
 		}
 		else
 		{
@@ -43,7 +43,7 @@ public class TC_PersonArchive extends BaseClass{
 	@DataProvider
 	public String[][] getTestData() throws IOException
 	{
-		String[][] testData = getData("Persons");
+		String[][] testData = getData("Person");
 		return testData;
 	}
 	
