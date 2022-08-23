@@ -6,20 +6,27 @@
   </listeners>
   <test thread-count="5" name="Person(failed)">
     <classes>
-      <class name="com.qa.testCases.TC_PersonArchive">
-        <methods>
-          <include name="setup"/>
-          <include name="validateArchive"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.testCases.TC_PersonArchive -->
       <class name="com.qa.testCases.TC_PersonMRV">
         <methods>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="setup"/>
           <include name="validatePersonHeader"/>
         </methods>
       </class> <!-- com.qa.testCases.TC_PersonMRV -->
+      <class name="com.qa.testCases.TC_PersonArchive">
+        <methods>
+          <include name="validateArchive"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testCases.TC_PersonArchive -->
+      <class name="com.qa.testCases.TC_PersonSRV">
+        <methods>
+          <include name="validateSRVPerson"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testCases.TC_PersonSRV -->
     </classes>
   </test> <!-- Person(failed) -->
 </suite> <!-- Failed suite [flexSchema] -->
