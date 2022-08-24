@@ -65,7 +65,7 @@ public class ExtentTestNGIReporterListener extends BaseClass implements IReporte
     
     private void init() {
     	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-		String repName = "Test-Report-"+timeStamp;
+		String repName = "Test-Report";
     	ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\test-output\\FS-Reports" + File.separator + repName + ".html");
         System.out.println("*********************" + System.getProperty("user.dir") + "\\test-output\\FS-Reports" + File.separator + repName + ".html");
         htmlReporter.config().setDocumentTitle("ExtentReports - Created by TestNG Listener");
